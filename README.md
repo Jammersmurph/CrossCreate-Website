@@ -2,6 +2,11 @@
 
 A lightweight, responsive website for the CrossCreate Minecraft Java–Bedrock Create server. Plain HTML, CSS, and JavaScript; no build step or application dependencies.
 
+- Website: https://crosscreate.org
+- Pages address: https://crosscreate.pages.dev
+- Repository: https://github.com/Jammersmurph/CrossCreate-Website
+- Hosting: Cloudflare Pages project `crosscreate`, connected to GitHub; pushes to `main` deploy automatically.
+
 ## Local preview
 
 Run `python3 -m http.server 8080 --directory public` and open http://localhost:8080.
