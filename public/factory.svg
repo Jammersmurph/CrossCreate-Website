@@ -1,104 +1,260 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="740" height="700" viewBox="0 0 740 700" fill="none">
-<title>The CrossCreate workshop</title>
-<desc>An original isometric workshop on a floating grass island, with copper roofs, brass gears, a windmill, trees, and a railway.</desc>
-<defs>
-  <pattern id="brick" width="36" height="22" patternUnits="userSpaceOnUse"><path d="M0 0H36M0 22H36M18 0V11M0 11H36M0 11V22M36 11V22" stroke="#372f28" stroke-opacity=".14" stroke-width="2"/></pattern>
-  <pattern id="roof" width="26" height="20" patternUnits="userSpaceOnUse"><path d="M0 0H26M0 20H26M13 0V20" stroke="#f1d6a4" stroke-opacity=".15" stroke-width="2"/></pattern>
-  <g id="window"><path d="M0 0 27 15V51L0 36Z" fill="#263e38" stroke="#d4bb8e" stroke-width="4"/><path d="m13 8 1 36M0 18l27 15" stroke="#d4bb8e" stroke-width="3"/><path d="m3 5 8 4v11l-8-4z" fill="#acb7a0" opacity=".5"/></g>
-  <g id="gear"><path d="m-8-46 16 0 3 11 10 4 10-6 11 11-6 10 4 10 11 3v16l-11 3-4 10 6 10-11 11-10-6-10 4-3 11h-16l-3-11-10-4-10 6-11-11 6-10-4-10-11-3v-16l11-3 4-10-6-10 11-11 10 6 10-4z" fill="#b9955d" stroke="#594b34" stroke-width="3"/><circle r="27" fill="#677467" stroke="#594b34" stroke-width="4"/><path d="M-23 0H23M0-23V23m-17-17 34 34m-34 0 34-34" stroke="#bb9c65" stroke-width="7"/><circle r="9" fill="#d3b77c" stroke="#594b34" stroke-width="3"/></g>
-  <g id="tree"><path d="M-5 0v51l13-7V0" fill="#6c5139"/><path d="m0-85 36 20v43L0-2l-35-20v-43z" fill="#3c5b42"/><path d="m0-85 36 20L0-44l-35-21z" fill="#71865a"/><path d="M0-44v42l36-20v-43z" fill="#4b6d49"/><path d="m-13-106 29 16v30l-29 16-29-16v-30z" fill="#58774d"/><path d="m-13-106 29 16-29 17-29-17z" fill="#849766"/></g>
-  <g id="crate"><path d="m0 0 28-16 28 16-28 16z" fill="#c6a471"/><path d="M0 0v32l28 16V16z" fill="#937048"/><path d="m28 16 28-16v32L28 48z" fill="#ad8755"/><path d="m5 6 18 10v24L5 30zm28 10 18-10v24L33 40z" stroke="#604e36" stroke-width="2"/><path d="m5 6 18 34m10 0L51 6" stroke="#604e36" stroke-width="2"/></g>
-</defs>
-<!-- surveyed ground -->
-<ellipse cx="382" cy="579" rx="241" ry="52" fill="#314b35" opacity=".07"/>
-<path d="m57 420 314-181 314 181-314 182z" stroke="#a4ac92" stroke-dasharray="4 7" opacity=".6"/>
-<path d="M371 215v32M42 420h30M671 420h30M371 590v30" stroke="#87947a"/>
-<!-- floating island -->
-<path d="m99 398 261-151 278 160-262 152z" fill="#71835c"/>
-<path d="M99 398v53l61 35v31l69 40v25l79 45 68-39v-29z" fill="#766a50"/>
-<path d="m376 559 262-152v48l-45 26v29l-78 45v29l-80 46-59-42z" fill="#585e47"/>
-<path d="m99 398 277 161v18L99 417z" fill="#536b45"/>
-<path d="m376 559 262-152v18L376 577z" fill="#40583b"/>
-<path d="m118 430 30 17v19l-30-17zm50 29 41 24v19l-41-24zm68 43 35 20v25l-35-20zm68 46 37 21v27l-37-22z" fill="#8f7d5b"/>
-<path d="m423 553 39-23v18l-39 23zm69-43 44-25v25l-44 25zm60-32 36-21v15l-36 22z" fill="#70745a"/>
-<path d="m186 502 29 17v28l-29-17zm89 61 22 12v32l-22-13zm194-2 21-12v34l-21 12z" fill="#414d3c" opacity=".5"/>
-<!-- lawn and path -->
-<path d="m146 399 213-123 228 131-213 123z" fill="#879566"/>
-<path d="m168 405 199-115 199 114-199 115z" fill="#95a272"/>
-<path d="m251 441 57-33 135 78-57 33z" fill="#b5ad89"/>
-<path d="m291 435 17-10 19 11-17 10zm38 22 18-10 19 11-18 10zm37 22 19-11 19 11-19 11z" fill="#c9c2a0"/>
-<!-- rear trees -->
-<use href="#tree" transform="translate(498 292) scale(.9)"/><use href="#tree" transform="translate(553 325) scale(.72)"/>
-<!-- tall chimney -->
-<path d="m402 147 31-18 28 16v143l-31 18-28-16z" fill="#8d6a4b"/>
-<path d="m430 163 31-18v143l-31 18z" fill="#6e573f"/>
-<path d="m402 147 31-18 28 16-31 18z" fill="#b58c62"/>
-<path d="m397 137 36-21 33 19v15l-36 21-33-19z" fill="#9e7853"/>
-<path d="m397 137 36-21 33 19-36 21z" fill="#c09a70"/>
-<path d="m410 137 23-13 20 11-23 13z" fill="#3a3b31"/>
-<path d="m407 187 23 13 25-14m-48 31 23 13 25-14m-48 31 23 13 25-14" stroke="#c4a27a" stroke-opacity=".35" stroke-width="2"/>
-<!-- puffs of steam -->
-<g fill="#d6d8c8"><path d="m425 109-18-10V79l20-12 20 12v20z" opacity=".9"/><path d="m449 76-25-14V37l25-14 25 14v25z" opacity=".65"/><path d="m477 39-22-13V4l22-13 22 13v22z" opacity=".35"/></g>
-<!-- main factory -->
-<path d="m250 308 117-68 144 83-117 68z" fill="#dec69d"/>
-<path d="M250 308v113l144 83V391z" fill="#c2a67a"/>
-<path d="m394 391 117-68v113l-117 68z" fill="#9d8862"/>
-<path d="M250 308v113l144 83V391zm144 83 117-68v113l-117 68z" fill="url(#brick)"/>
-<path d="m250 409 144 83 117-68v15l-117 68-144-83z" fill="#6e705b"/>
-<path d="m262 329 7 4v86l-7-4zm108 62 8 4v87l-8-5z" fill="#796c4f"/>
-<use href="#window" transform="translate(282 353)"/><use href="#window" transform="translate(329 380)"/>
-<path d="m420 416 31-18v72l-31 18z" fill="#405247" stroke="#736849" stroke-width="5"/><path d="m435 408 1 71" stroke="#9c8c62" stroke-width="3"/><circle cx="442" cy="450" r="2" fill="#d2b57b"/>
-<path d="m470 387 23-13v35l-23 13z" fill="#334e43" stroke="#cfb78e" stroke-width="4"/><path d="m481 381v35m-11-12 23-13" stroke="#cfb78e" stroke-width="3"/>
-<!-- pitched copper roof -->
-<path d="m232 303 65-113 146 84-66 113z" fill="#b6714c"/>
-<path d="m297 190 146 84 86 43-86-105z" fill="#cd8e5d"/>
-<path d="m232 303 145 84 152-70-86-105-146-22z" stroke="#564e38" stroke-width="5" stroke-linejoin="round"/>
-<path d="m232 303 65-113 146 84-66 113z" fill="url(#roof)"/>
-<path d="m297 190 146 84 86 43-86-105z" fill="url(#roof)"/>
-<path d="m247 300 57-97m-29 116 57-97m-29 116 57-97m-29 116 57-97" stroke="#6e4e36" stroke-width="3" opacity=".45"/>
-<path d="m232 303 145 84 152-70v10l-152 70-145-84z" fill="#665d43"/>
-<!-- roof dormer -->
-<path d="m315 280 25-40 35 20 5 50-33 19-32-18z" fill="#c6b38b"/>
-<path d="m315 280 25-40 35 20-25 40z" fill="#476559"/><path d="m350 300 25-40 16 38-11 12z" fill="#6c8a72"/>
-<path d="m329 293 19 11v22l-19-11z" fill="#344e43" stroke="#dfcaa0" stroke-width="3"/>
-<!-- workshop extension -->
-<path d="m173 334 58-34 63 37v89l-58 34-63-37z" fill="#c7b286"/>
-<path d="m236 371 58-34v89l-58 34z" fill="#9b916c"/>
-<path d="m161 331 71-41 74 43-71 41z" fill="#5e7d66" stroke="#41553e" stroke-width="4"/>
-<path d="m161 331 74 43v10l-74-43z" fill="#3d5743"/><path d="m235 374 71-41v10l-71 41z" fill="#46614c"/>
-<path d="m179 332 55-32m-36 43 55-32m-36 43 55-32m-36 43 55-32" stroke="#91a388" stroke-width="2" opacity=".6"/>
-<use href="#window" transform="translate(187 363) scale(.83)"/>
-<!-- brass wheel on workshop -->
-<g transform="translate(262 398) skewY(-30) scale(.62 .7)"><use href="#gear"/></g>
-<path d="m262 398 37 21" stroke="#5b5e48" stroke-width="8"/><path d="m262 394 37 21" stroke="#b4ae86" stroke-width="3"/>
-<!-- water channel -->
-<path d="m486 452 50-29 57 33-50 29z" fill="#668f89"/><path d="m498 453 32-18 43 25-32 18z" fill="#8fb1a3"/><path d="m515 446 35 20m-24-27 35 20" stroke="#c2d0b8" stroke-width="2"/>
-<!-- wheel and shaft -->
-<g transform="translate(506 392) skewY(-30) scale(.88 1)"><circle r="43" fill="#4d5a44" stroke="#715c3f" stroke-width="9"/><circle r="32" stroke="#b28e58" stroke-width="9"/><path d="M-33 0h66M0-33v66m-24-57 48 48m-48 0 48-48" stroke="#b28e58" stroke-width="7"/><circle r="9" fill="#ceb27b" stroke="#5f5138" stroke-width="4"/><path d="M-43-8v16m86-16v16M-8-43H8M-8 43H8" stroke="#cfb07c" stroke-width="10"/></g>
-<!-- train tracks in front -->
-<path d="m160 425 214 124 208-121" stroke="#b5ad87" stroke-width="35"/>
-<path d="m164 421 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m6 16-26-16m44 6-26-16m44 6-26-16m44 6-26-16m44 6-26-16m44 6-26-16m44 6-26-16m44 6-26-16m44 6-26-16m44 6-26-16" stroke="#736c50" stroke-width="6"/>
-<path d="m155 418 219 126 212-123m-239 120 27 16 219-127" stroke="#505d4a" stroke-width="4"/>
-<path d="m150 433 197 114" stroke="#505d4a" stroke-width="4"/>
-<!-- small locomotive -->
-<g transform="translate(350 465)"><path d="m-21 15 46-27 50 29-46 27z" fill="#404c3d"/><path d="m-21 15 50 29v12l-50-29z" fill="#3a4032"/><path d="m29 44 46-27v12L29 56z" fill="#293a31"/><path d="m-11 8 29-17 36 21-29 17z" fill="#77846a"/><path d="M-11 8v17l36 21V29z" fill="#4a6750"/><path d="m25 29 29-17v17L25 46z" fill="#344b39"/><path d="m24-23 22-13 23 13v32L47 22 24 9z" fill="#405c47"/><path d="m24-23 23 13v32L24 9z" fill="#7b8b68"/><path d="m30-17 10 6V3L30-3z" fill="#c8c5a0"/><path d="m47-10 15-9V-4L47 5z" fill="#b5c2a0"/><path d="m17-26 30-17 30 17-30 18z" fill="#364d3b"/><path d="m-3-5 10-6 11 6v18L7 19-3 13z" fill="#303f34"/><path d="m-7-8 14-8 15 8-15 9z" fill="#8d8d69"/><ellipse cx="-4" cy="29" rx="7" ry="10" transform="rotate(-30 -4 29)" fill="#3d4235" stroke="#ac9c71" stroke-width="3"/><ellipse cx="19" cy="43" rx="7" ry="10" transform="rotate(-30 19 43)" fill="#3d4235" stroke="#ac9c71" stroke-width="3"/></g>
-<!-- windmill tower -->
-<path d="m176 282 31-18 29 17 8 98-36 21-40-23z" fill="#ddd0aa"/>
-<path d="m207 299 29-18 8 98-36 21z" fill="#b1ac83"/>
-<path d="m166 282 41-64 40 65-40 24z" fill="#71866b" stroke="#4d654d" stroke-width="3"/>
-<path d="m166 282 41-64v89z" fill="#4b6b52"/>
-<path d="m182 339 15 9v29l-15-9z" fill="#526b50"/>
-<!-- four mill sails -->
-<g transform="translate(188 287)"><path d="M0-1-65-38M0-1 55-83M0-1 65 37M0-1-55 81" stroke="#5f674b" stroke-width="7"/><path d="m-15-9-9 16-52-30 9-16zM9-15-7-24l41-62 16 9zM15 9l9-16 52 30-9 16zM-9 15l16 9-41 62-16-9z" fill="#e3d6ae" stroke="#8b8661" stroke-width="3"/><path d="m-36-20-8 15m-9-25-8 15m87-65 15 9M14-52l15 9m7 63 8-15m9 25 8-15m-87 65-15-9m27-9-15-9" stroke="#a59b71" stroke-width="2"/><circle r="10" fill="#bc9c61" stroke="#5f674b" stroke-width="4"/><circle r="3" fill="#ece0b8"/></g>
-<!-- storage and foreground trees -->
-<use href="#crate" transform="translate(290 438) scale(.65)"/><use href="#crate" transform="translate(320 453) scale(.65)"/><use href="#crate" transform="translate(306 429) scale(.65)"/>
-<use href="#tree" transform="translate(584 417) scale(.68)"/><use href="#tree" transform="translate(145 397) scale(.7)"/>
-<!-- grass tufts and stones -->
-<path d="m132 415 2-10 7 9m110 69 1-10 7 8m292-78 1-10 7 8m-104 86 1-10 7 8m-287-99 1-8 7 7" stroke="#4e7047" stroke-width="3"/>
-<path d="m227 471 10-6 12 7-10 6zm326-48 8-5 13 7-8 5z" fill="#c0be9b"/>
-<!-- delicate drafting callouts -->
-<path d="M527 224h66l29-29h63M257 219h-70l-24-30H84" stroke="#9da58d" stroke-width="1"/>
-<circle cx="527" cy="224" r="3" fill="#b65b35"/><circle cx="257" cy="219" r="3" fill="#b65b35"/>
-<text x="621" y="186" fill="#7b856f" font-family="monospace" font-size="9" letter-spacing="1">MAKE IT MOVE.</text>
-<text x="52" y="178" fill="#7b856f" font-family="monospace" font-size="9" letter-spacing="1">DREAM IT UP.</text>
+  <title>The CrossCreate workshop at night</title>
+  <desc>An original isometric illustration of a night-time factory: a copper-roofed workshop with glowing windows, brass gears, a windmill, a water wheel and a railway, floating on an island of dark stone and grass.</desc>
+
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#d9a65a" stop-opacity=".16"/>
+      <stop offset=".6" stop-color="#d9a65a" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#d9a65a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffcf82" stop-opacity=".65"/>
+      <stop offset=".55" stop-color="#ffb85c" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#ffb85c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="copperL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b06a45"/>
+      <stop offset="1" stop-color="#8d4f31"/>
+    </linearGradient>
+    <linearGradient id="copperR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cd8753"/>
+      <stop offset="1" stop-color="#a25f38"/>
+    </linearGradient>
+    <linearGradient id="steelL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f5a53"/>
+      <stop offset="1" stop-color="#3a4540"/>
+    </linearGradient>
+    <pattern id="brick" width="44" height="30" patternUnits="userSpaceOnUse">
+      <path d="M0 0h44M0 30h44" stroke="#101614" stroke-opacity=".55" stroke-width="2"/>
+      <path d="M22 0v30" stroke="#101614" stroke-opacity=".32" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <filter id="softSmall" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.4"/>
+    </filter>
+
+    <g id="window">
+      <path d="M0 0 27 15V51L0 36Z" fill="#ffcf82" stroke="#c9a464" stroke-width="4"/>
+      <path d="m13 8 1 36M0 18l27 15" stroke="#a8813f" stroke-width="3"/>
+      <path d="m3 6 8 4v12l-8-4z" fill="#ffe6ae" opacity=".55"/>
+    </g>
+
+    <g id="gear">
+      <path d="m-8-46 16 0 3 11 10 4 10-6 11 11-6 10 4 10 11 3v16l-11 3-4 10 6 10-11 11-10-6-10 4-3 11h-16l-3-11-10-4-10 6-11-11 6-10-4-10-11-3v-16l11-3 4-10-6-10 11-11 10 6 10-4z" fill="#c99b55" stroke="#4b3a22" stroke-width="3"/>
+      <circle r="27" fill="#4c4531" stroke="#4b3a22" stroke-width="4"/>
+      <path d="M-23 0H23M0-23V23m-17-17 34 34m-34 0 34-34" stroke="#d8ae68" stroke-width="7"/>
+      <circle r="9" fill="#efcf96" stroke="#4b3a22" stroke-width="3"/>
+    </g>
+
+    <g id="tree">
+      <path d="M-5 0v51l13-7V0" fill="#3f2f22"/>
+      <path d="m0-85 36 20v43L0-2l-35-20v-43z" fill="#2c4433"/>
+      <path d="m0-85 36 20L0-44l-35-21z" fill="#49654a"/>
+      <path d="M0-44v42l36-20v-43z" fill="#35513c"/>
+      <path d="m-13-106 29 16v30l-29 16-29-16v-30z" fill="#3a5740"/>
+      <path d="m-13-106 29 16-29 17-29-17z" fill="#5a7750"/>
+    </g>
+
+    <g id="crate">
+      <path d="m0 0 28-16 28 16-28 16z" fill="#7d603d"/>
+      <path d="M0 0v32l28 16V16z" fill="#523d25"/>
+      <path d="m28 16 28-16v32L28 48z" fill="#654b2c"/>
+      <path d="m5 6 18 10v24L5 30zm28 10 18-10v24L33 40z" stroke="#3a2c1b" stroke-width="2"/>
+      <path d="m5 6 18 34m10 0L51 6" stroke="#3a2c1b" stroke-width="2"/>
+    </g>
+  </defs>
+
+  <!-- ambient light -->
+  <ellipse cx="372" cy="330" rx="330" ry="270" fill="url(#halo)"/>
+  <g opacity=".1" stroke="#d9a65a" stroke-width="1.4" fill="none" transform="translate(618 96) scale(3.1)">
+    <path d="M10.6 1h2.8l.6 2.7 1.4.6 2.2-1.5 2 2-1.5 2.2.6 1.4 2.7.6v2.8l-2.7.6-.6 1.4 1.5 2.2-2 2-2.2-1.5-1.4.6-.6 2.7h-2.8l-.6-2.7-1.4-.6-2.2 1.5-2-2 1.5-2.2-.6-1.4L1 13.4v-2.8l2.7-.6.6-1.4-1.5-2.2 2-2 2.2 1.5 1.4-.6z"/>
+    <circle cx="12" cy="12" r="4.4"/>
+  </g>
+  <g fill="#d9a65a" opacity=".35">
+    <circle cx="82" cy="128" r="1.4"/><circle cx="148" cy="86" r="1"/><circle cx="634" cy="238" r="1.2"/>
+    <circle cx="690" cy="176" r="1"/><circle cx="60" cy="252" r="1"/><circle cx="556" cy="64" r="1.3"/>
+  </g>
+
+  <!-- survey lines -->
+  <ellipse cx="380" cy="584" rx="248" ry="54" fill="#0a0c0d" opacity=".5"/>
+  <path d="m57 420 314-181 314 181-314 182z" stroke="#6f7a63" stroke-opacity=".35" stroke-dasharray="4 7"/>
+  <path d="M371 215v32M42 420h30M671 420h30M371 590v30" stroke="#6f7a63" stroke-opacity=".5"/>
+
+  <!-- floating island -->
+  <path d="m99 398 261-151 278 160-262 152z" fill="#4c5a40"/>
+  <path d="M99 398v53l61 35v31l69 40v25l79 45 68-39v-29z" fill="#3a342b"/>
+  <path d="m376 559 262-152v48l-45 26v29l-78 45v29l-80 46-59-42z" fill="#2a2f27"/>
+  <path d="m99 398 277 161v18L99 417z" fill="#3e4c37"/>
+  <path d="m376 559 262-152v18L376 577z" fill="#313b2e"/>
+  <path d="m118 430 30 17v19l-30-17zm50 29 41 24v19l-41-24zm68 43 35 20v25l-35-20zm68 46 37 21v27l-37-22z" fill="#4a4336"/>
+  <path d="m423 553 39-23v18l-39 23zm69-43 44-25v25l-44 25zm60-32 36-21v15l-36 22z" fill="#3a4033"/>
+  <path d="m186 502 29 17v28l-29-17zm89 61 22 12v32l-22-13zm194-2 21-12v34l-21 12z" fill="#1e2420" opacity=".8"/>
+
+  <!-- lawn and path -->
+  <path d="m146 399 213-123 228 131-213 123z" fill="#4f5e42"/>
+  <path d="m168 405 199-115 199 114-199 115z" fill="#596a48"/>
+  <path d="m251 441 57-33 135 78-57 33z" fill="#6e6952"/>
+  <path d="m291 435 17-10 19 11-17 10zm38 22 18-10 19 11-18 10zm37 22 19-11 19 11-19 11z" fill="#837c60"/>
+
+  <!-- rear trees -->
+  <use href="#tree" transform="translate(498 292) scale(.9)"/>
+  <use href="#tree" transform="translate(553 325) scale(.72)"/>
+
+  <!-- chimney -->
+  <path d="m402 147 31-18 28 16v143l-31 18-28-16z" fill="#4a443c"/>
+  <path d="m430 163 31-18v143l-31 18z" fill="#37322b"/>
+  <path d="m402 147 31-18 28 16-31 18z" fill="#5e574c"/>
+  <path d="m397 137 36-21 33 19v15l-36 21-33-19z" fill="#544c41"/>
+  <path d="m397 137 36-21 33 19-36 21z" fill="#6a6153"/>
+  <path d="m410 137 23-13 20 11-23 13z" fill="#171a16"/>
+  <path d="m407 187 23 13 25-14m-48 31 23 13 25-14m-48 31 23 13 25-14" stroke="#6f6554" stroke-opacity=".45" stroke-width="2"/>
+
+  <!-- steam -->
+  <g fill="#bfc7bb">
+    <path d="m425 109-18-10V79l20-12 20 12v20z" opacity=".18" filter="url(#soft)"/>
+    <path d="m449 76-25-14V37l25-14 25 14v25z" opacity=".13" filter="url(#soft)"/>
+    <path d="m477 39-22-13V4l22-13 22 13v22z" opacity=".08" filter="url(#soft)"/>
+  </g>
+
+  <!-- main factory -->
+  <path d="m250 308 117-68 144 83-117 68z" fill="url(#steelL)"/>
+  <path d="M250 308v113l144 83V391z" fill="#3b4642"/>
+  <path d="m394 391 117-68v113l-117 68z" fill="#2c3633"/>
+  <path d="M250 308v113l144 83V391zm144 83 117-68v113l-117 68z" fill="url(#brick)" opacity=".35"/>
+  <path d="m250 409 144 83 117-68v15l-117 68-144-83z" fill="#1c2422"/>
+  <path d="m262 329 7 4v86l-7-4zm108 62 8 4v87l-8-5z" fill="#2b3431"/>
+
+  <!-- window light -->
+  <ellipse cx="295" cy="380" rx="62" ry="58" fill="url(#lampGlow)" opacity=".5"/>
+  <ellipse cx="342" cy="407" rx="60" ry="56" fill="url(#lampGlow)" opacity=".45"/>
+  <use href="#window" transform="translate(282 353)"/>
+  <use href="#window" transform="translate(329 380)"/>
+
+  <!-- door and vents -->
+  <path d="m420 416 31-18v72l-31 18z" fill="#3c2f21" stroke="#5e513c" stroke-width="5"/>
+  <path d="m435 408 1 71" stroke="#79684b" stroke-width="3"/>
+  <circle cx="442" cy="450" r="2" fill="#e4c188"/>
+  <path d="m432 424 12-7v16l-12 7z" fill="#3a2c1d" stroke="#6d5a3f" stroke-width="1.5"/>
+  <path d="m470 387 23-13v35l-23 13z" fill="#1e2b27" stroke="#7e6f4f" stroke-width="4"/>
+  <path d="m481 381v35m-11-12 23-13" stroke="#7e6f4f" stroke-width="3"/>
+
+  <!-- copper roof -->
+  <path d="m232 303 65-113 146 84-66 113z" fill="url(#copperL)"/>
+  <path d="m297 190 146 84 86 43-86-105z" fill="url(#copperR)"/>
+  <path d="m232 303 145 84 152-70-86-105-146-22z" stroke="#513523" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m247 300 57-97m-29 116 57-97m-29 116 57-97m-29 116 57-97" stroke="#6f4227" stroke-width="3" opacity=".55"/>
+  <path d="m232 303 145 84 152-70v10l-152 70-145-84z" fill="#2a2119"/>
+  <path d="m283 288 60-35 62 36-60 35z" fill="#d9a65a" opacity=".06"/>
+
+  <!-- roof dormer -->
+  <path d="m315 280 25-40 35 20 5 50-33 19-32-18z" fill="#4b554f"/>
+  <path d="m315 280 25-40 35 20-25 40z" fill="#3f5f4f"/>
+  <path d="m350 300 25-40 16 38-11 12z" fill="#54735d"/>
+  <ellipse cx="338" cy="320" rx="34" ry="32" fill="url(#lampGlow)" opacity=".5"/>
+  <path d="m329 293 19 11v22l-19-11z" fill="#ffcf82" stroke="#c9a464" stroke-width="3"/>
+
+  <!-- workshop extension -->
+  <path d="m173 334 58-34 63 37v89l-58 34-63-37z" fill="#46504a"/>
+  <path d="m236 371 58-34v89l-58 34z" fill="#333c37"/>
+  <path d="m161 331 71-41 74 43-71 41z" fill="#4b6b57" stroke="#2f463a" stroke-width="4"/>
+  <path d="m161 331 74 43v10l-74-43z" fill="#2c4137"/>
+  <path d="m235 374 71-41v10l-71 41z" fill="#37503f"/>
+  <path d="m179 332 55-32m-36 43 55-32m-36 43 55-32m-36 43 55-32" stroke="#6d8a74" stroke-width="2" opacity=".4"/>
+  <ellipse cx="198" cy="382" rx="42" ry="38" fill="url(#lampGlow)" opacity=".4"/>
+  <use href="#window" transform="translate(187 363) scale(.83)"/>
+
+  <!-- brass drive wheel -->
+  <g transform="translate(262 398) skewY(-30) scale(.62 .7)">
+    <use href="#gear"/>
+  </g>
+  <path d="m262 398 37 21" stroke="#2f2b20" stroke-width="8"/>
+  <path d="m262 394 37 21" stroke="#a99a6f" stroke-width="3"/>
+
+  <!-- water channel and wheel -->
+  <path d="m486 452 50-29 57 33-50 29z" fill="#2b4f4b"/>
+  <path d="m498 453 32-18 43 25-32 18z" fill="#3e6a60"/>
+  <path d="m515 446 35 20m-24-27 35 20" stroke="#7fa89a" stroke-width="2" opacity=".7"/>
+  <g transform="translate(506 392) skewY(-30) scale(.88 1)">
+    <circle r="43" fill="#33402f" stroke="#5d4a30" stroke-width="9"/>
+    <circle r="32" stroke="#c99b55" stroke-width="9"/>
+    <path d="M-33 0h66M0-33v66m-24-57 48 48m-48 0 48-48" stroke="#c99b55" stroke-width="7"/>
+    <circle r="9" fill="#efcf96" stroke="#4b3a22" stroke-width="4"/>
+    <path d="M-43-8v16m86-16v16M-8-43H8M-8 43H8" stroke="#b98f52" stroke-width="10"/>
+  </g>
+
+  <!-- rails -->
+  <path d="m160 425 214 124 208-121" stroke="#55543f" stroke-width="35"/>
+  <path d="m164 421 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m-9 26 27-16m6 16-26-16m44 6-26-16m44 6-26-16m44 6-26-16m44 6-26-16m44 6-26-16m44 6-26-16m44 6-26-16m44 6-26-16m44 6-26-16" stroke="#35342a" stroke-width="6"/>
+  <path d="m155 418 219 126 212-123m-239 120 27 16 219-127" stroke="#7d8272" stroke-width="3"/>
+  <path d="m150 433 197 114" stroke="#33372f" stroke-width="4"/>
+
+  <!-- locomotive -->
+  <g transform="translate(350 465)">
+    <path d="m-21 15 46-27 50 29-46 27z" fill="#2c3a31"/>
+    <path d="m-21 15 50 29v12l-50-29z" fill="#232c26"/>
+    <path d="m29 44 46-27v12L29 56z" fill="#1c2721"/>
+    <path d="m-11 8 29-17 36 21-29 17z" fill="#4d5f50"/>
+    <path d="M-11 8v17l36 21V29z" fill="#33473a"/>
+    <path d="m25 29 29-17v17L25 46z" fill="#26382e"/>
+    <path d="m24-23 22-13 23 13v32L47 22 24 9z" fill="#33473a"/>
+    <path d="m24-23 23 13v32L24 9z" fill="#53654f"/>
+    <path d="m30-17 10 6V3L30-3z" fill="#ffcf82"/>
+    <path d="m47-10 15-9V-4L47 5z" fill="#d9c69a"/>
+    <path d="m17-26 30-17 30 17-30 18z" fill="#26382e"/>
+    <path d="m-3-5 10-6 11 6v18L7 19-3 13z" fill="#2a3830"/>
+    <path d="m-7-8 14-8 15 8-15 9z" fill="#7d775c"/>
+    <ellipse cx="-4" cy="29" rx="7" ry="10" transform="rotate(-30 -4 29)" fill="#242a22" stroke="#8c7a52" stroke-width="3"/>
+    <ellipse cx="19" cy="43" rx="7" ry="10" transform="rotate(-30 19 43)" fill="#242a22" stroke="#8c7a52" stroke-width="3"/>
+    <circle cx="-14" cy="6" r="15" fill="url(#lampGlow)"/>
+    <path d="m-14 6-38-16v32z" fill="#ffcf82" opacity=".12" filter="url(#softSmall)"/>
+  </g>
+
+  <!-- windmill -->
+  <path d="m176 282 31-18 29 17 8 98-36 21-40-23z" fill="#555f57"/>
+  <path d="m207 299 29-18 8 98-36 21z" fill="#3c4640"/>
+  <path d="m166 282 41-64 40 65-40 24z" fill="#45604d" stroke="#2f463a" stroke-width="3"/>
+  <path d="m166 282 41-64v89z" fill="#2f493b"/>
+  <path d="m182 339 15 9v29l-15-9z" fill="#243a2e"/>
+  <g transform="translate(188 287)">
+    <path d="M0-1-65-38M0-1 55-83M0-1 65 37M0-1-55 81" stroke="#3d412f" stroke-width="7"/>
+    <path d="m-15-9-9 16-52-30 9-16zM9-15-7-24l41-62 16 9zM15 9l9-16 52 30-9 16zM-9 15l16 9-41 62-16-9z" fill="#d9cfae" stroke="#6b6448" stroke-width="3"/>
+    <path d="m-36-20-8 15m-9-25-8 15m87-65 15 9M14-52l15 9m7 63 8-15m9 25 8-15m-87 65-15-9m27-9-15-9" stroke="#8e8663" stroke-width="2"/>
+    <circle r="10" fill="#c99b55" stroke="#3d412f" stroke-width="4"/>
+    <circle r="3" fill="#f2e3bb"/>
+  </g>
+
+  <!-- storage -->
+  <use href="#crate" transform="translate(290 438) scale(.65)"/>
+  <use href="#crate" transform="translate(320 453) scale(.65)"/>
+  <use href="#crate" transform="translate(306 429) scale(.65)"/>
+
+  <!-- lamps -->
+  <g>
+    <path d="M153 428v-52" stroke="#2b322d" stroke-width="4"/>
+    <path d="m145 376 8-5 8 5v9l-8 5-8-5z" fill="#d9a65a" stroke="#4b3a22" stroke-width="2"/>
+    <ellipse cx="153" cy="382" rx="40" ry="34" fill="url(#lampGlow)" opacity=".7"/>
+    <ellipse cx="153" cy="436" rx="46" ry="17" fill="#ffcf82" opacity=".06"/>
+  </g>
+  <g>
+    <path d="M601 433v-48" stroke="#2b322d" stroke-width="4"/>
+    <path d="m593 385 8-5 8 5v9l-8 5-8-5z" fill="#d9a65a" stroke="#4b3a22" stroke-width="2"/>
+    <ellipse cx="601" cy="391" rx="38" ry="32" fill="url(#lampGlow)" opacity=".6"/>
+    <ellipse cx="601" cy="440" rx="44" ry="16" fill="#ffcf82" opacity=".05"/>
+  </g>
+
+  <!-- foreground greenery -->
+  <use href="#tree" transform="translate(584 417) scale(.68)"/>
+  <use href="#tree" transform="translate(145 397) scale(.7)"/>
+  <path d="m132 415 2-10 7 9m110 69 1-10 7 8m292-78 1-10 7 8m-104 86 1-10 7 8m-287-99 1-8 7 7" stroke="#3f5c3a" stroke-width="3"/>
+  <path d="m227 471 10-6 12 7-10 6zm326-48 8-5 13 7-8 5z" fill="#8a8770"/>
+
+  <!-- drafting callouts -->
+  <path d="M527 224h66l29-29h63M257 219h-70l-24-30H84" stroke="#8a927e" stroke-width="1" opacity=".55"/>
+  <circle cx="527" cy="224" r="3" fill="#d9a65a"/>
+  <circle cx="257" cy="219" r="3" fill="#d9a65a"/>
+  <text x="621" y="186" fill="#8a927e" font-family="monospace" font-size="9" letter-spacing="1" opacity=".85">MAKE IT MOVE.</text>
+  <text x="52" y="178" fill="#8a927e" font-family="monospace" font-size="9" letter-spacing="1" opacity=".85">DREAM IT UP.</text>
 </svg>

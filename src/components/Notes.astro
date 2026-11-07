@@ -1,0 +1,26 @@
+---
+import { faqs } from '../data/site';
+---
+
+<section class="section notes-section" id="notes">
+  <div class="wrap notes">
+    <div class="notes-head">
+      <p class="eyebrow"><span class="eyebrow-bracket">[</span> 03 / Engineer’s notes <span class="eyebrow-bracket">]</span></p>
+      <h2>Before the<br />gears turn.</h2>
+      <p class="notes-intro">A new kind of workshop comes with a few questions. Open a note to read the fine print.</p>
+    </div>
+
+    <div class="note-list">
+      {faqs.map((faq, index) => (
+        <details class="note" name="faq" open={index === 0}>
+          <summary>
+            <span class="note-index" aria-hidden="true">Q.{String(index + 1).padStart(2, '0')}</span>
+            <span class="note-question">{faq.question}</span>
+            <span class="note-toggle" aria-hidden="true"><span></span></span>
+          </summary>
+          <p>{faq.answer}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

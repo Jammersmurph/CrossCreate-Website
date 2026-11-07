@@ -1,0 +1,74 @@
+---
+import Icon from './Icon.astro';
+import { editions, site } from '../data/site';
+---
+
+<section class="assembly" id="join">
+  <div class="assembly-grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow"><span class="eyebrow-bracket">[</span> 02 / Assembly <span class="eyebrow-bracket">]</span></p>
+        <h2>Pick your edition.<br />We’ll cut the gears.</h2>
+      </div>
+      <p class="section-lede">
+        CrossCreate is in active development. Here’s the assembly sequence
+        we’re working toward — and what to know before you join.
+      </p>
+    </div>
+
+    <div class="plans">
+      {editions.map((edition) => (
+        <article class="plan" data-status={edition.status}>
+          <span class="rivet rivet-tl" aria-hidden="true"></span>
+          <span class="rivet rivet-tr" aria-hidden="true"></span>
+          <span class="rivet rivet-bl" aria-hidden="true"></span>
+          <span class="rivet rivet-br" aria-hidden="true"></span>
+
+          <header class="plan-head">
+            <span class="plan-badge" aria-hidden="true">{edition.badge}</span>
+            <div>
+              <p class="plan-eyebrow">{edition.eyebrow}</p>
+              <h3>{edition.name}</h3>
+            </div>
+            <span class="pill">{edition.pill}</span>
+          </header>
+
+          <ol class="steps">
+            {edition.steps.map((step, index) => (
+              <li class="step">
+                <span class="step-num" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+                <div>
+                  <strong>{step.title}</strong>
+                  <p>{step.body}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+
+          <div class="socket">
+            {edition.status === 'ready' ? (
+              <>
+                <span class="socket-value"><span class="socket-label">Host</span><code>{site.hostname}</code></span>
+                <button class="copy-btn" type="button" data-copy={site.hostname}>
+                  Copy <Icon name="copy" class="copy-icon" />
+                </button>
+              </>
+            ) : (
+              <>
+                <span class="socket-value"><span class="socket-label">Link</span><code>awaiting linkage</code></span>
+                <span class="socket-status"><span class="lamp" aria-hidden="true"></span>{edition.statusLabel}</span>
+              </>
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <p class="assembly-note">
+      <span class="assembly-note-mark" aria-hidden="true">!</span>
+      A work in progress, not a promise of perfect parity. Cross-edition Create support is experimental;
+      compatibility details will be shared as testing progresses.
+    </p>
+  </div>
+</section>

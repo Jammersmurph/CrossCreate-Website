@@ -1,0 +1,74 @@
+---
+import Icon from './Icon.astro';
+import { site } from '../data/site';
+---
+
+<section class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">
+        <span class="eyebrow-bracket">[</span>
+        Project 01
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        Java × Bedrock
+        <span class="eyebrow-bracket">]</span>
+      </p>
+
+      <h1>Two editions.<br /><span class="accent">One gearbox.</span></h1>
+
+      <p class="lede">
+        Create’s kinetic engineering, meshed with Java–Bedrock crossplay. A shared
+        survival world where the only limit is the next idea.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#join">Enter the workshop <Icon name="arrow" class="btn-icon" /></a>
+        <a class="btn btn-ghost" href="#machine">Read the blueprint</a>
+      </div>
+
+      <button class="server" type="button" data-copy={site.hostname} aria-label={`Copy server address ${site.hostname}`}>
+        <span class="server-led" aria-hidden="true"><Icon name="signal" /></span>
+        <span class="server-body">
+          <span class="server-label">Server address</span>
+          <span class="server-ip">{site.hostname}</span>
+        </span>
+        <span class="server-copy">Copy <Icon name="copy" class="server-copy-icon" /></span>
+      </button>
+
+      <p class="micro-note"><span class="lamp" aria-hidden="true"></span>Pre-launch schematic — public access details coming soon.</p>
+    </div>
+
+    <div class="rig">
+      <span class="rivet rivet-tl" aria-hidden="true"></span>
+      <span class="rivet rivet-tr" aria-hidden="true"></span>
+      <span class="rivet rivet-bl" aria-hidden="true"></span>
+      <span class="rivet rivet-br" aria-hidden="true"></span>
+
+      <div class="rig-top">
+        <span>Assembly no. 001 — the workshop</span>
+        <span class="rig-code">CC-26/JB</span>
+      </div>
+
+      <div class="rig-art">
+        <img
+          src="/factory.svg"
+          alt="Original isometric illustration of a night-time workshop: a copper-roofed factory with glowing windows, brass gears, a windmill, water wheel and railway on a floating island."
+          width="740"
+          height="700"
+          fetchpriority="high"
+        />
+      </div>
+
+      <div class="rig-foot">
+        <div class="gauge">
+          <span class="gauge-label">Kinetic stress</span>
+          <span class="gauge-track" aria-hidden="true"><span class="gauge-fill"></span></span>
+        </div>
+        <span class="rig-state"><span class="lamp" aria-hidden="true"></span>Assembly in progress</span>
+      </div>
+    </div>
+  </div>
+</section>

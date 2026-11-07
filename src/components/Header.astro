@@ -1,0 +1,33 @@
+---
+import Icon from './Icon.astro';
+import { site, navLinks } from '../data/site';
+---
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label={`${site.name} — home`}>
+      <img
+        class="brand-mark"
+        src={site.logo.src}
+        alt={site.logo.wordmark ? '' : site.logo.alt}
+        width="42"
+        height="42"
+      />
+      {site.logo.wordmark && (
+        <span class="brand-text">
+          CROSS<span>CREATE</span>
+          <small>Kinetic engineering division</small>
+        </span>
+      )}
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      {navLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+
+    <div class="header-actions">
+      <span class="status-chip"><span class="lamp" aria-hidden="true"></span>{site.status}</span>
+      <a class="btn btn-sm" href="#join"><span>Join the build</span> <Icon name="arrow" class="btn-icon" /></a>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,29 @@
+---
+import Icon from './Icon.astro';
+import { site } from '../data/site';
+---
+
+<section class="outro-wrap wrap">
+  <div class="outro">
+    <span class="rivet rivet-tl" aria-hidden="true"></span>
+    <span class="rivet rivet-tr" aria-hidden="true"></span>
+    <span class="rivet rivet-bl" aria-hidden="true"></span>
+    <span class="rivet rivet-br" aria-hidden="true"></span>
+    <Icon name="gear" class="outro-gear" />
+
+    <p class="outro-eyebrow">Every great world starts with an idea.</p>
+    <h2>The first gear is<br />almost turning.</h2>
+    <p class="outro-lede">Be there when the workshop opens.</p>
+
+    <div class="outro-actions">
+      <button class="btn btn-dark" type="button" data-copy={site.hostname}>
+        Copy server address <Icon name="copy" class="btn-icon" />
+      </button>
+      <a class="outro-link" href={site.repository} target="_blank" rel="noopener noreferrer">
+        Follow the build <Icon name="arrow" class="btn-icon" />
+      </a>
+    </div>
+
+    <p class="outro-foot"><code>{site.hostname}</code><span aria-hidden="true">·</span>Public launch coming soon</p>
+  </div>
+</section>

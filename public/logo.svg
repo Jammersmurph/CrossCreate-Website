@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <title>CrossCreate</title>
+  <rect x="1" y="1" width="46" height="46" rx="7" fill="#151A1D" stroke="#3A444A" stroke-width="2" />
+  <g transform="translate(12 12)">
+    <path d="M10.6 1h2.8l.6 2.7 1.4.6 2.2-1.5 2 2-1.5 2.2.6 1.4 2.7.6v2.8l-2.7.6-.6 1.4 1.5 2.2-2 2-2.2-1.5-1.4.6-.6 2.7h-2.8l-.6-2.7-1.4-.6-2.2 1.5-2-2 1.5-2.2-.6-1.4L1 13.4v-2.8l2.7-.6.6-1.4-1.5-2.2 2-2 2.2 1.5 1.4-.6z" fill="#D9A65A" stroke="#8F6A34" stroke-width="1" stroke-linejoin="round" />
+    <circle cx="12" cy="12" r="3.6" fill="#151A1D" stroke="#8F6A34" stroke-width="1.2" />
+    <circle cx="12" cy="12" r="1.2" fill="#B06A3C" />
+  </g>
+</svg>

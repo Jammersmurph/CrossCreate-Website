@@ -1,0 +1,15 @@
+---
+import Icon from './Icon.astro';
+import { tickerItems } from '../data/site';
+---
+
+<div class="ticker" aria-label="Server highlights">
+  <div class="ticker-track">
+    {[...tickerItems, ...tickerItems].map((item, index) => (
+      <span class="ticker-item" aria-hidden={index >= tickerItems.length ? 'true' : undefined}>
+        {item}
+        <Icon name="gear" class="ticker-cog" />
+      </span>
+    ))}
+  </div>
+</div>
