@@ -49,6 +49,8 @@ The site intentionally describes the project as in development. The hostname is 
 
 `public/_headers` sets a strict Content Security Policy and long-lived caching for hashed `/_astro/*` assets. Stylesheets and scripts are emitted as external files (`build.inlineStylesheets: 'never'`, `vite.build.assetsInlineLimit: 0`) so the `script-src 'self'` / `style-src 'self'` rules hold.
 
+The policy also allows Cloudflare Web Analytics (`static.cloudflareinsights.com` for the beacon, `cloudflareinsights.com` for its endpoint) because Cloudflare injects that script into Pages responses. Remove those two origins if analytics is turned off.
+
 ## Files
 
 - `src/data/site.ts` — typed site content
