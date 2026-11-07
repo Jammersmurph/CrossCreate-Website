@@ -30,9 +30,14 @@ function legacyCopy(text: string): boolean {
   document.body.appendChild(field);
   field.select();
 
+  // execCommand is deprecated but remains the only synchronous fallback when
+  // the async Clipboard API is unavailable or denied. Bind through a local
+  // signature so the deprecation hint doesn't leak into `astro check`.
+  const execCommand = document.execCommand.bind(document) as (commandId: string) => boolean;
+
   let copied = false;
   try {
-    copied = document.execCommand('copy');
+    copied = execCommand('copy');
   } catch {
     copied = false;
   }
